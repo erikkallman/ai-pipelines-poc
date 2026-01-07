@@ -1,25 +1,61 @@
-# filtering
-This work is a PoC-merge of ColonyOS(https://github.com/colonyos), Digital Earth Sweden(https://github.com/DigitalEarthSweden) and cloud detection models(https://github.com/aleksispi/ml-cloud-opt-thick).
-Use trained models to filter satelite images based on cloudiness and then download the cloud-free ones.  
+# Satellite Cloud Detection PoC
 
-Prerequisites include docker, docker-compose and ColonyOS.
-To understand each individual part better please check those repos out.
+A proof-of-concept integration of [ColonyOS](https://github.com/colonyos), [Digital Earth Sweden](https://github.com/DigitalEarthSweden), and [ML cloud detection models](https://github.com/aleksispi/ml-cloud-opt-thick) for automated satellite image filtering based on cloudiness.
 
-Future use-cases building ontop of this PoC:  
-Utilize ColonyOS to process large amounts of satelite data for various use cases, e.g. dataset creation.  
+## Overview
 
-Refine the PoC and make the solution more intuative.  
-Incorporate some interactive element such as a map, fetch multiple coordinates(area boxes) to a collection, and set a timeframe for the whole collection, and then download it all.  
-  
-Continuous updating map in ”real-time".  
-Take inspiration of ColonyOS and from this PoC, develop and release a product that update a, cloud-free, map of sweden every single day. Partition work over multiple executors for fast processing. Update grind-like map in a masked based approach  
-  
-Build pipeplines for collection of large data for (un)supervised learning.  
-Utilize the  flexible nature of ColonyOS workflows and setup complex pipelines for data collection, processing abd gathering of large amounts of data.
+This project uses trained machine learning models to analyze satellite imagery, filter out cloudy images, and download only cloud-free data. The system combines ColonyOS for distributed workflow orchestration.
 
-Deploy usecases ontop of this PoC.  
-Using a set of different pretrained models, configure an event detection/alarm system. Get notified when a particular event happens.  
-Can be spatially specific or not, meaning you might be interested in a particular area locally or an event globally. Can be continuously ran, indefinite.  
+## Prerequisites
 
+- Docker
+- Docker Compose
+- ColonyOS
 
+For detailed information about each component, refer to their respective repositories linked above.
 
+## Current Capabilities
+
+- Automated cloud detection in satellite imagery
+- Filtering based on cloudiness thresholds
+- Download orchestration for cloud-free images
+
+## Possible Future Roadmap
+
+### Large-Scale Data Processing
+
+Expand ColonyOS integration to process large volumes of satellite data for various applications, including machine learning dataset creation.
+
+### Enhanced User Interface
+
+- Interactive map interface for coordinate selection
+- Area-based image collection (bounding boxes)
+- Configurable time range queries
+- Batch download functionality
+
+### Real-Time Sweden Map
+
+Develop a production system that generates daily cloud-free maps of Sweden:
+
+- Distributed processing across multiple executors
+- Grid-based map updates using masked approach
+- Near real-time continuous updates
+
+### Data Pipeline Infrastructure
+
+Build flexible pipelines for supervised and unsupervised learning:
+
+- Complex workflow orchestration via ColonyOS
+- Automated data collection and processing
+- Large-scale dataset aggregation
+
+### Event Detection System
+
+Deploy pre-trained models for automated event monitoring:
+
+- Configurable spatial filters (local or global)
+- Real-time notifications for detected events
+- Continuous monitoring capability
+
+## License
+See license.txt in the root of this repo.
