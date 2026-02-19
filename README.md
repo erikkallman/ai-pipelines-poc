@@ -1,6 +1,6 @@
 # Satellite Cloud Detection PoC
 
-This repo contains an integration of [ColonyOS](https://github.com/colonyos), [Digital Earth Sweden](https://github.com/DigitalEarthSweden), and [ML cloud detection models](https://github.com/aleksispi/ml-cloud-opt-thick) for automated satellite image filtering based on cloudiness. 
+This repo contains an integration of [ColonyOS](https://github.com/colonyos), [Digital Earth Sweden](https://github.com/DigitalEarthSweden), and [ML cloud detection models](https://github.com/aleksispi/ml-cloud-opt-thick) for automated satellite image filtering based on cloudiness.
 
 These components taken together form a pipeline for distributed machine learning applied to earth observation data.
 
@@ -63,5 +63,6 @@ Deploy pre-trained models for automated event monitoring:
 - Real-time notifications for detected events
 - Continuous monitoring capability
 
-## License
-See license.txt in the root of this repo.
+## Licensing and Copyright
+
+All material in this repository follows the copyright and licensing as detailed in license.txt in the root directory of the repository.
